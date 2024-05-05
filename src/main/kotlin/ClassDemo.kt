@@ -1,5 +1,5 @@
-//class SimpleClass(val a:Int,val b:String):AbstractClass(),SimpleInterface{
-//    val c=10L
+class SimpleClass(a: Int, b: String) {
+    val c = 10L
 //
 //    fun printHello(){
 //        println("hello world")
@@ -68,7 +68,7 @@
 //}
 
 
-fun main() {
+    fun main() {
 
 //    val simpleClass=SimpleClass(2,"joshua")
 //    println(simpleClass.a)
@@ -86,5 +86,5 @@ fun main() {
 //    testInitTwo.printTwo()
 
 
-
+    }
 }

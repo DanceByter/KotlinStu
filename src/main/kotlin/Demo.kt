@@ -14,10 +14,10 @@ fun main() {
 //    println("输出${str.length}")
 //    println("输出\n${str.length}")
 //    //类型比较
-//    val str1 = "joshua"
-//    val str2 = String("joshua".toCharArray())
-//    println(str1 == str2)
-//    println(str1 === str2)
+    val str1 = "joshua"
+    val str2 = String("joshua".toCharArray())
+    println(str1 == str2)
+    println(str1 === str2)
 //    val str3="""
 //        *
 //        **
@@ -29,7 +29,8 @@ fun main() {
     //************************************
 
     //创建一个带元素的一维数组
-//    val simpleArray = arrayOf(1, 2, 3)
+    val simpleArray = arrayOf(1, 2, 3)//Array<Int>
+    val simpleArray1 = intArrayOf(1, 2, 3)//int[]
 //    println(simpleArray.joinToString())
     //创建一个不带元素大小固定类型固定的一维数组
 //    val nullArray = arrayOfNulls<Int>(5)
@@ -53,7 +54,7 @@ fun main() {
 //    println(oneArray contentEquals twoArray)
     //创建两个多维数组进行比较
 //    val threeDArray = Array(2) { Array(2) { Array<Int>(2) { 0 } } }
-//    val fourDArray = Array(2) { Array(2) { Array<Int>(2) { 1 } } }
+    val fourDArray = Array(2) { Array(2) { Array<Int>(2) { 1 } } }
 //    println(threeDArray.contentDeepToString())
 //    println(fourDArray.contentDeepToString())
 //    println(threeDArray contentEquals fourDArray)
@@ -78,14 +79,14 @@ fun main() {
 //    println(sixArrayD.joinToString())
 //    val sevenArray = arrayOfNulls<String>(5)
     //使用迭代器遍历数组
-//    val eightArray= arrayOf(1,2,3,4,5)
+    val eightArray= arrayOf(1,2,3,4,5)
 //    for (e in eightArray){
 //        print("$e,")
 //    }
 //    println()
-//    eightArray.forEach { element->
-//        print("$element,")
-//    }
+    eightArray.forEach { element->
+        print("$element,")
+    }
 
     //************************************
 
@@ -113,4 +114,6 @@ fun main() {
     //************************************
 
 //simpleEnd
+
+    
 }
