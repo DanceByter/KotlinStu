@@ -1,5 +1,5 @@
-class SimpleClass(a: Int, b: String) {
-    val c = 10L
+//class SimpleClass(a: Int, b: String) {
+//    val c = 10L
 //
 //    fun printHello(){
 //        println("hello world")
@@ -66,10 +66,38 @@ class SimpleClass(a: Int, b: String) {
 //    }
 //
 //}
+//}
 
 
+//class Student(name:String,age:Int){
+//
+//    init{
+//        println("主构造函数的参数：name:${name},age:${age}")
+//    }
+//
+//    var name = name+" Love"
+//    var age = age + 1
+//
+//    init{
+//        println("该对象的参数：name:${this.name},age:${this.age}")
+//        println("主构造函数的参数：name:${name},age:${age}")
+//    }
+//
+//}
 
+
+//定义一个Parent接口
+interface Person{
+    //接口中的属性默认为public abstract
+    val name:String
 }
+
+//定义一个Child实现类
+class Child:Person{
+    override val name:String="joshua"
+}
+
+
 fun main() {
 
 //    val simpleClass=SimpleClass(2,"joshua")
@@ -87,19 +115,24 @@ fun main() {
 //    testInitOne.printOne()
 //    testInitTwo.printTwo()
 
-    //不可空类型不能赋值为null
-    var notNull:String = "Hello"
+//    //不可空类型不能赋值为null
+//    var notNull:String = "Hello"
+//
+//    //notNull = null会发生编译错误
+//    val length1 = notNull.length
+//
+//    //但是有时候我们不确定类型是否可空
+//    var ableNull:String? = "Hello"
+//    //这时可以赋值null，即ableNull = null
+//    ableNull=null
+//    //我们可以用安全访问方式
+//    val length2 = ableNull?.length
+//    println(ableNull)
 
-    //notNull = null会发生编译错误
-    val length1 = notNull.length
 
-    //但是有时候我们不确定类型是否可空
-    var ableNull:String? = "Hello"
-    //这时可以赋值null，即ableNull = null
-    ableNull=null
-    //我们可以用安全访问方式
-    val length2 = ableNull?.length
-    println(ableNull)
+    //测试主构造函数
+//    val student=Student("joshua",20)
+
 
 
 }
