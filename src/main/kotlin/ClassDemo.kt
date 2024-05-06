@@ -68,7 +68,9 @@ class SimpleClass(a: Int, b: String) {
 //}
 
 
-    fun main() {
+
+}
+fun main() {
 
 //    val simpleClass=SimpleClass(2,"joshua")
 //    println(simpleClass.a)
@@ -85,6 +87,19 @@ class SimpleClass(a: Int, b: String) {
 //    testInitOne.printOne()
 //    testInitTwo.printTwo()
 
+    //不可空类型不能赋值为null
+    var notNull:String = "Hello"
 
-    }
+    //notNull = null会发生编译错误
+    val length1 = notNull.length
+
+    //但是有时候我们不确定类型是否可空
+    var ableNull:String? = "Hello"
+    //这时可以赋值null，即ableNull = null
+    ableNull=null
+    //我们可以用安全访问方式
+    val length2 = ableNull?.length
+    println(ableNull)
+
+
 }

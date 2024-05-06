@@ -72,6 +72,12 @@ fun main() {
         print(intArray[i])
         print(" ")
     }
+    println()
+    //使用迭代器
+    for (i in intArray){
+        print(i)
+        print(" ")
+    }
 
 
 }
