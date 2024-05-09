@@ -1,4 +1,4 @@
-class Student constructor(name: String, age: Int) {
+open class Student constructor(name: String, age: Int) {
 
     init {
         println("主构造函数参数 : name : ${name} , age : ${age} ;")
@@ -33,7 +33,9 @@ fun main() {
     println(student.printStudent())
 
     //调用次构造函数
-    var student2 = Student("Jerry", 18, 165)
+    var student2 = Student("Jerry", 18, 165 )
     println(student2.printStudent())
+
+    println("joshua")
 
 }
